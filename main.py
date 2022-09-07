@@ -1,10 +1,15 @@
 import cv2
+
 trained_face_data = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
-img = cv2.imread("image2.jpg")
+img = cv2.imread("image4.jpg")
 grayscaled_img = cv2.cvtColor( img, cv2.COLOR_BGR2GRAY)
 face_coordinates = trained_face_data.detectMultiScale(grayscaled_img)
 print(face_coordinates)
-cv2.rectangle(img, (80, 62), (80+191, 62+191), (0, 255, 0), 2)
-cv2.imshow("Boyko", img)
-cv2.waitKey()
+for (x, y, w, h) in face_coordinates:
+    cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 0), 2)
+if face_coordinates == ():
+    print("There is no face in this image")
+else:
+    cv2.imshow("Boyko", img)
+    cv2.waitKey()
 print("Code Completed")
