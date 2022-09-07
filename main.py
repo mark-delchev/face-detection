@@ -10,6 +10,6 @@ for (x, y, w, h) in face_coordinates:
 if face_coordinates == ():
     print("There is no face in this image")
 else:
-    cv2.imshow("Boyko", img)
+    cv2.imshow("Face detection", img)
     cv2.waitKey()
 print("Code Completed")
