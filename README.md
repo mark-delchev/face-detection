@@ -9,26 +9,8 @@
 - This app is made with the OpenCV Computer Vision Library and Python
 ## Detection results
 - Detecting a single face and multiple faces
-<style>
-    .column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-    }
-    .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-</style>
-<div class="row">
-    <div class="column">
-        <img src="https://i.imgur.com/bh2TeUs.png" width = 60%>
-    </div>
-    <div class="column">
-        <img src="https://i.imgur.com/Yprq2lO.png" width = 60%>
-    </div>
-</div>
+
+ <img src="https://i.imgur.com/bh2TeUs.png" width = 30%><img src="https://i.imgur.com/Yprq2lO.png" width = 44%/>
 
 
 ## How to build
